@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my first docker app. I am just checking if dockerizing my app can help ensure my precompiled scripts will always work the same in production as it does in development. It is hosted on heroku here: https://dockerized-blog.herokuapp.com/
 
-Things you may want to cover:
 
-* Ruby version
+Configuration
 
-* System dependencies
+* git clone git@github.com:Vutivi/dockerized-blog.git
+* cd dockerized-blog
+* docker-compose build
+* docker-compose run web rake db:create db:migrate bundle
+* docker-compose up
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
